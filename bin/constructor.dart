@@ -9,10 +9,15 @@ class Car {
   final wheel = 4;
   String? color;
 
-  Car(String paramBrand, String paramColor) {
-    brand = paramBrand;
-    color = paramColor;
+  // construtor sederhana with brand & color
+  Car(String brand, String color) {
+    this.brand = brand;
+    this.color = color;
   }
+  // Car(String paramBrand, String paramColor) {
+  //   brand = paramBrand;
+  //   color = paramColor;
+  // }
 
   // method road to call in main
   String road(int speed, String location) {
