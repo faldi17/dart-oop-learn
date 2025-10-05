@@ -10,10 +10,11 @@ class Car {
   String? color;
 
   // construtor sederhana with brand & color
-  Car(String brand, String color) {
-    this.brand = brand;
-    this.color = color;
-  }
+  Car(this.brand, this.color);
+  // {
+  //   this.brand = brand;
+  //   this.color = color;
+  // }
   // Car(String paramBrand, String paramColor) {
   //   brand = paramBrand;
   //   color = paramColor;
