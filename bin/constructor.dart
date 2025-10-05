@@ -19,6 +19,7 @@ class Car {
   String brand = "Ferrari";
   final wheel = 4;
   String? color;
+  int seat = 2;
 
   // construtor sederhana with brand & color
   Car(this.brand, this.color);
@@ -26,7 +27,7 @@ class Car {
   Car.withBrand(this.brand);
   Car.withColor(this.color);
 
-  Car.withBrandAndColor(this.brand, this.color);
+  Car.withBrandAndColor(this.brand, this.color) : seat = 4;
 
   // {
   //   this.brand = brand;
@@ -46,7 +47,7 @@ class Car {
     } else {
       color = "Tidak dikenali";
     }
-    return "Mobil $brand $color melaju dengan kecepatan $speed km/jam di $location. Ngeeeng... ngeeeng...";
+    return "Mobil $brand $color kursi $seat melaju dengan kecepatan $speed km/jam di $location. Ngeeeng... ngeeeng...";
   }
 
   // void road() {
