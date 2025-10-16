@@ -14,11 +14,13 @@ void main() {
   print(car.road(120, "Tol Serpong"));
   // car.road();
 
+  // CONSTANT CONSTRUCTOR
   ImmutableCar immuCar = const ImmutableCar(6, 4);
   ImmutableCar immuCar2 = const ImmutableCar(6, 4);
   print(immuCar == immuCar2);
 }
 
+// CONSTANT CONSTRUCTOR
 class ImmutableCar {
   final int wheel;
   final int seat;
