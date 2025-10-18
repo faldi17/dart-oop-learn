@@ -18,6 +18,10 @@ void main() {
   ImmutableCar immuCar = const ImmutableCar(6, 4);
   ImmutableCar immuCar2 = const ImmutableCar(6, 4);
   print(immuCar == immuCar2);
+
+  Person person = Person.create();
+  Person person2 = Person.create();
+  print(person == person2);
 }
 
 // CONSTANT CONSTRUCTOR
@@ -26,6 +30,15 @@ class ImmutableCar {
   final int seat;
 
   const ImmutableCar(this.seat, this.wheel);
+}
+
+class Person {
+  Person();
+  static final Person _person = Person();
+
+  factory Person.create() {
+    return _person;
+  }
 }
 
 class Car {
