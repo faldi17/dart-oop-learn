@@ -6,6 +6,12 @@ void main() {
     ..seat = 4;
 
   print(car.road());
+
+  // cascade notation null
+  Car? carNull;
+  Car? newCar = carNull
+    ?..brand = "Suzuki"
+    ..color = "Red";
 }
 
 class Car {
