@@ -12,6 +12,8 @@ void main() {
   Car? newCar = carNull
     ?..brand = "Suzuki"
     ..color = "Red";
+
+  print(newCar);
 }
 
 class Car {
