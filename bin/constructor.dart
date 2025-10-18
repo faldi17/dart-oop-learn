@@ -32,6 +32,7 @@ class ImmutableCar {
   const ImmutableCar(this.seat, this.wheel);
 }
 
+// FACTORY CONSTRUCTOR
 class Person {
   Person();
   static final Person _person = Person();
